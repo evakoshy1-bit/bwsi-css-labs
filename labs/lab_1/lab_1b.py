@@ -50,13 +50,5 @@ def main():
     result = simple_calculator(operation, num1, num2)
     print(f"The result of {operation}ing {num1} and {num2} is: {result}")
 
-def request_santized_number(prompt: str) -> float:
-    while True:
-        try:
-            number = float (input (prompt))
-            return number 
-        except ValueError:
-            print("Invalid input. Please enter a valid number.")
-
 if __name__ == "__main__":
     main()
